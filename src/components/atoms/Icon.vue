@@ -18,7 +18,7 @@ const props = defineProps({
 });
 
 const iconPath = computed(() => {
-  return `/src/assets/icons/${props.name}.svg`;
+  return new URL(`../../assets/icons/${props.name}.svg`, import.meta.url).href;
 });
 
 const sizeMap = {

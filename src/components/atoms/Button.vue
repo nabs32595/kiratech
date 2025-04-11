@@ -80,5 +80,6 @@ const widthClass = computed(() => props.fullWidth ? 'w-full' : '');
 
 .btn-outline:hover {
   background-color: #f9f9f9;
+  color: #35BAD8;
 }
 </style> 

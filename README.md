@@ -4,8 +4,8 @@
 
 1. Clone the repository
 ```sh
-git clone https://github.com/yourusername/kiratech-landing.git
-cd kiratech-landing
+git clone git@github.com:nabs32595/kiratech.git
+cd kiratech
 ```
 
 2. Install dependencies
