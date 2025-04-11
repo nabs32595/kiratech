@@ -1,5 +1,5 @@
 <script setup>
-import { computed, defineAsyncComponent, ref } from 'vue';
+import { computed } from 'vue';
 
 const props = defineProps({
   name: {
@@ -14,11 +14,6 @@ const props = defineProps({
   color: {
     type: String,
     default: 'currentColor'
-  },
-  variant: {
-    type: String,
-    default: 'solid',
-    validator: (value) => ['solid', 'outline'].includes(value)
   }
 });
 
@@ -35,25 +30,10 @@ const sizeMap = {
 const sizeStyle = computed(() => {
   return sizeMap[props.size] || sizeMap.md;
 });
-
-const hasIcon = ref(true);
-
-// Check if the icon exists
-const checkIconExists = async () => {
-  try {
-    await import(`../../assets/icons/${props.name}.svg`);
-    hasIcon.value = true;
-  } catch (error) {
-    console.error(`Icon not found: ${props.name}`);
-    hasIcon.value = false;
-  }
-};
-
-checkIconExists();
 </script>
 
 <template>
-  <div v-if="hasIcon" class="icon-wrapper">
+  <div class="icon-wrapper">
     <img 
       :src="iconPath" 
       :class="['icon', `icon-${size}`]"
@@ -65,7 +45,6 @@ checkIconExists();
       :alt="`${name} icon`"
     />
   </div>
-  <span v-else class="icon-missing">Icon not found: {{ name }}</span>
 </template>
 
 <style scoped>
@@ -73,5 +52,24 @@ checkIconExists();
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-md {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-lg {
+  width: 32px;
+  height: 32px;
 }
 </style> 
