@@ -1,0 +1,97 @@
+// Colors
+// Primary colors from Figma
+$white: #FFFFFF;
+$black: #000000;
+$primary: #35BAD8; // Button primary color
+$primary-light: #55D9F6; // Hover state for primary buttons
+$primary-selected: #35BAD8; // Selected state
+
+// Text colors from Figma
+$dark-text: #303030; // Text dark
+$gray-text: #979797; // Text gray
+$light-gray: #BCBCBC; // Light gray text used in headers
+$lighter-gray: #D8D8D8; // Used in notifications icon background
+
+// Border colors
+$border-color: #FFFFFF; // Default border color
+$border-selected: #35BAD8; // Selected border color
+
+// Typography
+// Font families from Figma
+$font-primary: 'Open Sans', sans-serif; // Used for most text
+$font-secondary: 'Montserrat', sans-serif; // Used for buttons
+$font-tertiary: 'Proxima Nova', sans-serif; // Used for titles
+
+// Font weights from Figma
+$font-weight-regular: 400; // Normal text
+$font-weight-semibold: 600; // Button text, table headers
+$font-weight-bold: 700; // User name, titles
+
+// Font sizes from Figma
+$font-size-sm: 13px; // Small text (table headers)
+$font-size-base: 14px; // Base text size (table content, buttons)
+$font-size-lg: 32px; // Large text (popup titles)
+$font-size-xl: 40px; // Extra large text (main headers)
+
+// Spacing from Figma
+$spacing-xs: 5px; // Extra small spacing
+$spacing-sm: 10px; // Small spacing (gaps between elements)
+$spacing-md: 16px; // Medium spacing (button padding vertical)
+$spacing-lg: 20px; // Large spacing (button padding horizontal)
+$spacing-xl: 36px; // Extra large spacing (wide buttons)
+
+// Border radius from Figma
+$border-radius-sm: 1px; // Icon add component
+$border-radius-base: 5px; // Buttons
+$border-radius-lg: 8px; // Table rows, popup
+
+// Shadows from Figma
+$shadow-sm: 0px 2px 10px rgba(0, 0, 0, 0.1); // Table rows, cards
+$shadow-lg: 0px 0px 20px rgba(0, 0, 0, 0.05); // Header
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Component specific variables
+$button-padding-y: 16px; // Vertical padding for buttons
+$button-padding-x: 20px; // Horizontal padding for buttons
+$button-icon-gap: 10px; // Gap between icon and text in buttons
+
+// Typography
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
+$font-tertiary: 'Proxima Nova', sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$font-size-sm: 13px;
+$font-size-base: 14px;
+$font-size-lg: 32px;
+$font-size-xl: 40px;
+
+// Spacing
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 16px;
+$spacing-lg: 20px;
+$spacing-xl: 36px;
+
+// Border radius
+$border-radius-sm: 1px;
+$border-radius-base: 5px;
+$border-radius-lg: 8px;
+
+// Shadows
+$shadow-sm: 0px 2px 10px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0px 0px 20px rgba(0, 0, 0, 0.05);
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px; 
