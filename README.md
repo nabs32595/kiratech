@@ -1,29 +1,43 @@
-# kiratech-landing
+# Kiratech Tecnical assessment
 
-This template should help get you started developing with Vue 3 in Vite.
+## 🛠️ Installation
 
-## Recommended IDE Setup
+1. Clone the repository
+```sh
+git clone https://github.com/yourusername/kiratech-landing.git
+cd kiratech-landing
+```
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+2. Install dependencies
 ```sh
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
-
+3. Start the development server
 ```sh
 pnpm dev
 ```
 
-### Compile and Minify for Production
+4. Visit `http://localhost:5173` in your browser
 
-```sh
-pnpm build
-```
+## 🧰 Tech Stack
+
+- Vue 3
+- Vite
+- Tailwind CSS
+- Vue Router
+- Pinia for state management
+
+## Live Demo
+
+You can access the live demo of this project at [here](https://kiratech.netlify.app/).
+
+
+## 📸 Screenshots
+
+User list
+![App Screenshot](./images/list.png)
+
+User details modal
+![Modal Screenshot](./images/modal.png)
+
