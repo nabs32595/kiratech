@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="flex px-6 py-4">
+    <!-- Header row - hidden on mobile, visible on md and up -->
+    <div class="hidden md:flex px-6 py-4">
       <div v-for="(header, index) in headers" :key="index" class="flex-1 text-xs font-semibold text-gray-400">
         {{ header.label }}
       </div>
@@ -10,9 +11,9 @@
       <div 
         v-for="i in 5"
         :key="i" 
-        class="flex items-center w-full p-6 bg-white border-b border-gray-100 rounded-lg"
+        class="flex flex-col md:flex-row items-start md:items-center w-full p-4 md:p-6 bg-white border-b border-gray-100 rounded-lg"
       >
-        <div v-for="j in headers.length" :key="j" class="flex-1 px-2">
+        <div v-for="j in headers.length" :key="j" class="w-full md:flex-1 px-2 mb-2 md:mb-0">
           <div class="h-4 bg-gray-200 rounded-full animate-pulse"></div>
         </div>
       </div>
@@ -23,10 +24,14 @@
       <div 
         v-for="item in items" 
         :key="item.id" 
-        class="flex items-center w-full p-6 bg-white border-b border-gray-100 rounded-lg cursor-pointer transition-colors hover:bg-gray-50"
+        class="flex flex-col md:flex-row items-start md:items-center w-full p-4 md:p-6 bg-white border-b border-gray-100 rounded-lg cursor-pointer transition-colors hover:bg-gray-50"
         @click="$emit('itemClick', item)"
       >
-        <div v-for="(column, index) in columns" :key="index" class="flex-1">
+        <div v-for="(column, index) in columns" :key="index" class="w-full md:flex-1 mb-2 md:mb-0">
+          <!-- Show header label on mobile only -->
+          <span class="md:hidden text-xs font-semibold text-gray-400 block mb-1">
+            {{ headers[index]?.label }}
+          </span>
           <span 
             :class="column.titleStyle ? 'text-[#303030] font-semibold text-sm' : 'text-[#979797] text-sm font-normal'"
           >
