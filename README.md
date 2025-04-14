@@ -4,7 +4,7 @@
 
 1. Clone the repository
 ```sh
-git clone git@github.com:nabs32595/kiratech.git
+git clone https://github.com/nabs32595/kiratech.git
 cd kiratech
 ```
 
